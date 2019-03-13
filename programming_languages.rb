@@ -5,10 +5,13 @@ def reformat_languages(languages)
     langs.each do |lang, lang_data|
       puts lang_data.keys[0]
       
-      new_hash[lang] = {
-        lang_data.keys[0] => lang_data.values[0],
-        :style => [type]
-      }
+      new_hash[lang] = {}
+      new_hash[lang][lang_data.keys[0]] = lang_data.values[0]
+      if !new_hash[lang][:style]
+        new_hash[lang][:style] = [type]
+      else
+        new_hash[lang][:style].push(type)
+      end
     end
   end
   
