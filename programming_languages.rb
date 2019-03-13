@@ -3,12 +3,17 @@ def reformat_languages(languages)
   
   languages.each do |type, langs|
     langs.each do |lang, lang_data|
+      puts lang_data.keys[0]
+      
       new_hash[lang] = {
-        lang_data.keys => lang_data.values,
+        lang_data.keys[0] => lang_data.values[0],
         :style => [type]
       }
     end
   end
+  
+  new_hash
+end
   
   # ruby = {:type => "interpreted"}
   # javascript = {:type => "interpreted"}
@@ -30,5 +35,3 @@ def reformat_languages(languages)
   #   :scala => scala,
   #   :javascript => javascript
   # }
-  new_hash
-end
