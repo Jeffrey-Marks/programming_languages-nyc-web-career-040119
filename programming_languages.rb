@@ -17,7 +17,7 @@ def reformat_languages(languages)
   }
   new_hash[:functional] = {
     :clojure => clojure,
-    :erlang => erlang
+    :erlang => erlang,
     :scala => scala,
     :javascript => javascript
   }
