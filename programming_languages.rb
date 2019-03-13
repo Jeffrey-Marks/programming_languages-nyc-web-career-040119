@@ -21,6 +21,4 @@ def reformat_languages(languages)
     :scala => scala,
     :javascript => javascript
   }
-  
-  new_hash == languages
 end
