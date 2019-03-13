@@ -8,10 +8,14 @@ def reformat_languages(languages)
   clojure = {:type => "compiled"}
   erlang = {:type => "compiled"}
   scala = {:type => "compiled"}
-  javascript = {:type => "interpreted"}
   
-  new_hash[:oo] = {}
-  new_hash[:functional] = {}
+  new_hash[:oo] = {
+    
+  }
+  new_hash[:functional] = {
+    :ruby => ruby,
+    :javascript
+  }
   
   new_hash
 end
