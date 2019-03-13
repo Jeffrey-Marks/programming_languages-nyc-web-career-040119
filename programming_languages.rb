@@ -10,11 +10,16 @@ def reformat_languages(languages)
   scala = {:type => "compiled"}
   
   new_hash[:oo] = {
-    
+    :ruby => ruby,
+    :javascript => javascript,
+    :python => python,
+    :java => java
   }
   new_hash[:functional] = {
-    :ruby => ruby,
-    :javascript
+    :clojure => clojure,
+    :erlang => erlang
+    :scala => scala,
+    :javascript => javascript
   }
   
   new_hash
