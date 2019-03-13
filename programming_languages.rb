@@ -22,7 +22,5 @@ def reformat_languages(languages)
     :javascript => javascript
   }
   
-  new_hash
+  new_hash == languages
 end
-
-puts reformat_languages("")
