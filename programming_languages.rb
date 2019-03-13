@@ -1,4 +1,5 @@
 def reformat_languages(languages)
+  puts languages
   new_hash = {}
   
   new_hash[:oo] = {}
